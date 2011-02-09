@@ -83,7 +83,7 @@ while (<INPUT_BDF>) {
 
 print OUTPUT_C "};
 
-const struct font_desc font_vga_$name = {
+const struct font_desc font_$name = {
 \t.idx    = " . "$NAME" . "_IDX,
 \t.name   = \"$NAME\",
 \t.width  = $width,
@@ -91,5 +91,5 @@ const struct font_desc font_vga_$name = {
 \t.data   = fontdata_$name,
 \t.pref   = 0,
 };
-EXPORT_SYMBOL(font_vga_$name);
+EXPORT_SYMBOL(font_$name);
 ";
