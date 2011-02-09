@@ -75,7 +75,7 @@ while (<INPUT_BDF>) {
 	}
 	if ( $cur_enc > $prev_enc + 1 ) {
 	    print OUTPUT_C "\t/* chars " .
-		($prev_enc+1) . ".." . ($cur_enc-1) . " are scipped! */\n\n";
+		($prev_enc+1) . ".." . ($cur_enc-1) . " are skipped! */\n\n";
 	}
 	print OUTPUT_C "\t" . "/* $cur_enc */\n";
     }
